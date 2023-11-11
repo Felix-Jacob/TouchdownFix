@@ -2,51 +2,55 @@
 <html> 
   <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css" type="text/css">
 	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0 />
-    <h1 id="title">VAN FIX-IT TICKET</h1>
-	<style type="text/css">
-	body {
-	background:linear-gradient(90deg, #808080 0%, #89CFF0 15%, #89CFF0 85%, #808080 100%);
-	font-family: sans-serif;
-	text-align: center;
-	padding: 20px;
-	}
-	.setfield {
-	display:inline-block;
-	}
-	.namebox, .van {
-	max-width: 110px}
-	.survey {
-	padding:20px 10px;
-	}
-	</style>
-	</title>
+		content="width=device-width, initial-scale=1.0 /">
+  		<title>VAN FIX-IT TICKET</title>
   </head>
   <body>
+	<header class="header">
+		<!--<div>
+			<img src="assets/navbar car.webp" class="navcar">
+			<nav class="nav">
+				<ul class="nav-list">
+					<li class="home"><a href="#">Home</a></li>
+					<li><a href="#">Tickets</a></li>
+					<li><a href="#">Uniforms</a></li>
+					<li><a href="#">No Pic Prompt</a></li>
+				</ul>
+			</nav>
+		</div>-->
+	</header>
   <div class="survey">
+	<h1>Van Fit-It Ticket</h1>
     <p id="description">Submit Van Issues Here.</p>
-    <form id="survey-form" action="https://formspree.io/f/xleyzzkp?subject=Van Maintenance" method="POST">
+    <form id="survey-form" action="https://formsubmit.co/jacobjfelix89@gmail.com" method="POST">
+		<div class="square1">
       <label id="name-label">Name: <input id="name" name="Driver" placeholder="Enter Name Here" type="text" required class="namebox"></label><br><br>
       <!--<label id="email-label">Email: <input placeholder="Enter Email Here" name="email" id="email" required type="email"></label>
 	  *reserve-->
-      <label id="number-label">Van #: <input placeholder="Van #" class="van id="number" name="Van#" type="number" min="1" max="99"><br><br>
-      <select id="dropdown" name="Priority-level">
-        <option>(priority)</option>
-        <option>Urgent</option>
+      <label id="number-label">Van #: <input placeholder="Van #" class="van" id="number" name="Van#" type="number" min="1" max="99"></label><br><br>
+      <select required id="dropdown" name="Priority-level" class="dropdown">
+        <option value="" disabled selected>(priority)</option>
+		<option>Urgent</option>
         <option>Medium</option>
         <option>Low</option>
-      </select><br><br>
+      </select>
+	  </div>
       <!--<label for="on-route"><input name="event-time" value="on-route" id="on-route" type="radio"> During Route</label>
       <label for="off-route"><input name="event-time" value="off-route" id="off-route" type="radio"> Before Route</label>
       <label for="unknown-route"><input id="unknown-route" value="unknown" name="event-time" type="radio"> Unknown</label>
 	  *reserve
 	  -->
-      <label><input type="checkbox" value="tires" name="Issue"> tires</label> 
-      <label><input type="checkbox" value="cameras" name="Issue"> cameras</label><br>
-      <label><input type="checkbox" value="mirrors" name="Issue"> mirrors</label>
-	  <label><input type="checkbox" value="brakes" name="Issue"> brakes</label
-      <label><input type="checkbox" value="other" name="Issue"> other</label><br><br>
+	  <div class="boxchecks">
+	  	<label><input type="checkbox" class="inputcbox" value="tires" name="Issue"> Tires</label> 
+      	<label><input type="checkbox" class="inputcbox" value="cameras" name="Issue"> Cameras</label>
+	  	<label><input type="checkbox" class="inputcbox" value="other" name="Issue"> Doors</label>
+      	<label><input type="checkbox" class="inputcbox" value="mirrors" name="Issue"> Mirrors</label>
+	  	<label><input type="checkbox" class="inputcbox" value="brakes" name="Issue"> Brakes</label>
+      	<label><input type="checkbox" class="inputcbox" value="other" name="Issue"> Other</label>
+	  	<br><br>
+	   </div>
 	  <fieldset class="setfield">
 	  <legend>Additional Info</legend>
       <textarea id="description" name="Description"></textarea>
