@@ -1,0 +1,74 @@
+    body {
+	background:linear-gradient(90deg, #808080 0%, #89CFF0 15%, #89CFF0 85%, #808080 100%);
+	font-family: sans-serif;
+	text-align: center;
+	}
+	.setfield {
+	display:inline-block;
+    background: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px auto;
+    width: 250px;
+    padding: 2px;
+    border: #999 2px solid;
+    margin-bottom: 20px;
+    box-shadow: 10px 7px 7px black;
+	}
+	.namebox, .van {
+        margin: auto;
+        max-width: 110px}
+	.survey {
+	padding: 5px 10px;
+	}
+    .boxchecks {
+        display: flex;
+        box-shadow: 10px 7px 7px black;
+        padding: 2px;
+        background: lightskyblue;
+        width: 250px;
+        position: relative;
+        text-align: center;
+        justify-content: space-evenly;
+        margin: auto;
+        flex-wrap: wrap;
+        border: #999 2px solid;
+        align-items: center;
+    }
+    .square1{
+        background: lightskyblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: auto;
+        width: 250px;
+        height: 150px;
+        padding-top: 4px;
+        border: #999 2px solid;
+        margin-bottom: 20px;
+        box-shadow: 10px 7px 7px black;
+    }
+    .dropdown {
+        line-height: 2px;
+        margin: auto;
+    }
+    /*.nav-list{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 40%;
+        background: paleturquoise;
+        list-style: none;
+        font-size: 20px;
+        align-items: flex-end;
+    }
+    .header{
+        background: paleturquoise;
+        margin: -18px -8px;
+        height: 50px;
+    }*/
+    .navcar{
+        float: left;
+        width: 50px;
+    }
