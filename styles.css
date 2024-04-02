@@ -53,11 +53,11 @@
         line-height: 2px;
         margin: auto;
     }
-    /*.nav-list{
+    .nav-list{
         display:flex;
         flex-direction: row;
         justify-content: space-around;
-        padding-left: 40%;
+        /*padding-left: 40%;*/
         background: paleturquoise;
         list-style: none;
         font-size: 20px;
@@ -67,7 +67,7 @@
         background: paleturquoise;
         margin: -18px -8px;
         height: 50px;
-    }*/
+    }
     .navcar{
         float: left;
         width: 50px;
